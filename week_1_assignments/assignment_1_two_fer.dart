@@ -1,10 +1,10 @@
-import 'dart:io';
-
 void main() {
-  print("Please enter the person's name: ");
-  String? personName = stdin.readLineSync();
+  String personName = "Bankah";
+  String personName2 = "";
   String twoFerMessage = twoFer(personName);
+  String twoFerMessage2 = twoFer(personName2);
   print(twoFerMessage);
+  print(twoFerMessage2);
 }
 
 String twoFer(String? name) {
