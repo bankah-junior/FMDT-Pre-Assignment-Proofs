@@ -24,3 +24,11 @@ BigInt total() {
   }
   return totalGrains;
 }
+
+// Efficient
+BigInt square2(final int n) {
+  if (n < 1 || n > 64) {
+    throw ArgumentError("Square must be between 1 and 64");
+  }
+  return BigInt.from(2).pow(n - 1);
+}
